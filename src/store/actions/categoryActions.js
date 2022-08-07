@@ -1,6 +1,7 @@
 import {
   ADD_CARD,
   ADD_LIST,
+  EDIT_CARD,
   REMOVE_CARD,
   REMOVE_LIST,
 } from "../types/category";
@@ -19,6 +20,13 @@ const addCard = (data) => {
   };
 };
 
+const editCard = (data) => {
+  return {
+    type: EDIT_CARD,
+    data,
+  };
+};
+
 const removeList = (data) => {
   return {
     type: REMOVE_LIST,
@@ -32,4 +40,4 @@ const removeCard = (data) => {
     data,
   };
 };
-export { addList, addCard, removeList, removeCard };
+export { addList, addCard, editCard, removeList, removeCard };
