@@ -9,9 +9,7 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <div className="App">
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <Home />
         </div>
       </BrowserRouter>
     </Provider>
